@@ -4,7 +4,6 @@ The **Real-Time Web App Attack Detection System** is a Flask + React-based platf
 
 This tool is intended for developers or security teams who want lightweight, extensible threat monitoring for their web applications.
 
----
 
 ## 🎯 Features
 
@@ -14,7 +13,6 @@ This tool is intended for developers or security teams who want lightweight, ext
 - Log viewer and analytics
 - REST API for integration with other tools
 
----
 
 ## 🧱 Tech Stack
 
@@ -34,82 +32,6 @@ This tool is intended for developers or security teams who want lightweight, ext
 - Nginx (reverse proxy)
 - Redis (for scalability or async alerts)
 
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourname/real-time-attack-detection.git
-cd real-time-attack-detection
-```
-
-### 2. Backend Setup
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python app.py
-```
-
-### 3. Frontend Setup
-```bash
-cd frontend
-npm install
-npm start
-```
-
-> Frontend will start on http://localhost:3000 and connect to the Flask backend on http://localhost:5000
-
----
-
-## 🧪 API Endpoints
-
-### Analyze a Request
-```
-POST /analyze
-Content-Type: application/json
-{
-    "url": "/login",
-    "params": {
-        "username": "admin",
-        "password": "' OR 1=1 --"
-    }
-}
-```
-
-### Get Logs
-```
-GET /logs
-```
-
----
-
-## 🗂 Directory Structure
-```
-real-time-attack-detection/
-├── backend/
-│   ├── app.py
-│   ├── detection_engine.py
-│   ├── socket_events.py
-│   └── ...
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   └── services/
-│   └── public/
-└── docker-compose.yml
-```
-
----
-
-## 🔐 Security Notes
-- All traffic should be encrypted using HTTPS.
-- Consider IP whitelisting or token auth for the `/analyze` endpoint.
-- Logs can be stored in a database for persistence and auditing.
-
----
 
 ## 📄 License
-Appache 2.0 License. See `LICENSE` file for details.
+Apache License 2.0. See `LICENSE` file for details.
