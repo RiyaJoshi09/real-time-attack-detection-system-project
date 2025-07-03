@@ -13,7 +13,7 @@ A real-time security monitoring system that detects and logs suspicious payloads
 
 ## 🛠️ Technologies Used
 
-### 🖙 Backend
+###  Backend
 
 * Python + Flask
 * Flask-SocketIO
@@ -62,7 +62,7 @@ real-time-attack-detection-system/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/real-time-attack-detection-system.git
+git clone https://github.com/RiyaJoshi09/real-time-attack-detection-system.git
 cd real-time-attack-detection-system
 ```
 
@@ -131,11 +131,6 @@ cd backend
 pytest
 ```
 
-## 📸 Demo
-
-> *(Optional: Add a screen recording or image here)*
-
-
 ## 📌 Environment Variables
 
 Create a `.env` file in the frontend root directory:
@@ -160,3 +155,6 @@ REACT_APP_API_URL=http://localhost:5000
 * 🔁 Log export options (CSV, JSON)
 
 * 🧠 ML-based anomaly detection engine
+
+## 📄 License
+Apache License 2.0. See `LICENSE` file for details.
