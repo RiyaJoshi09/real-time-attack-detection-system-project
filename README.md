@@ -2,8 +2,6 @@
 
 A real-time security monitoring system that detects and logs suspicious payloads submitted to a web application. The project features a **Flask-based backend** and a **React + Material UI frontend**, with **WebSocket-based real-time alerts** for detected attacks.
 
----
-
 ## 📦 Features
 
 * 🔍 Detects common web attacks (XSS, SQL Injection, Directory Traversal, etc.)
@@ -12,8 +10,6 @@ A real-time security monitoring system that detects and logs suspicious payloads
 * 🚨 Visual **alert banner** for new attack detection
 * 🌐 RESTful API for **submitting and retrieving logs**
 * 🐳 **Dockerized backend** for easy deployment
-
----
 
 ## 🛠️ Technologies Used
 
@@ -30,8 +26,6 @@ A real-time security monitoring system that detects and logs suspicious payloads
 * Material UI
 * Axios
 * Socket.IO Client
-
----
 
 ## 📁 Project Structure
 
@@ -63,8 +57,6 @@ real-time-attack-detection-system/
 │   └── package.json
 ```
 
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -73,8 +65,6 @@ real-time-attack-detection-system/
 git clone https://github.com/yourusername/real-time-attack-detection-system.git
 cd real-time-attack-detection-system
 ```
-
----
 
 ## 🐍 Backend Setup (Flask)
 
@@ -99,8 +89,6 @@ docker build -t attack-detector-backend .
 docker run -p 5000:5000 attack-detector-backend
 ```
 
----
-
 ### 📬 Test API
 
 #### Clean request:
@@ -119,8 +107,6 @@ curl -X POST http://localhost:5000/scan \
   -d '{"input": "<script>alert(1)</script>"}'
 ```
 
----
-
 ## ⚛️ Frontend Setup (React + Material UI)
 
 ### ⚖️ Prerequisites
@@ -138,8 +124,6 @@ npm start
 
 > 🔗 Make sure the backend is running at [http://localhost:5000](http://localhost:5000)
 
----
-
 ## 🔬 Running Backend Tests
 
 ```bash
@@ -147,13 +131,10 @@ cd backend
 pytest
 ```
 
----
-
 ## 📸 Demo
 
 > *(Optional: Add a screen recording or image here)*
 
----
 
 ## 📌 Environment Variables
 
@@ -162,8 +143,6 @@ Create a `.env` file in the frontend root directory:
 ```
 REACT_APP_API_URL=http://localhost:5000
 ```
-
----
 
 ## 🔮 Future Scope
 * 💾 Persistent storage with a database
