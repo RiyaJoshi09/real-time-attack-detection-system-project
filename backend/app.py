@@ -19,7 +19,7 @@ app.register_blueprint(routes_blueprint)
 register_socket_events(socketio)
 
 if __name__ == '__main__':
-    # Get host and port from environment variables (Docker-friendly)
+    # Get host and port from environment variables
     host = os.environ.get("FLASK_RUN_HOST", "0.0.0.0")
     port = int(os.environ.get("FLASK_RUN_PORT", 5000))
     

@@ -16,12 +16,12 @@ SUSPICIOUS_PATTERNS = [
     r"(?i)benchmark\s*\(",
     r"(?i)load_file\s*\(",
     r"(?i)outfile\s+'",
-    r"(?i)--",                         # SQL comment
-    r"(?i)#",                          # Another comment
-    r"(?i)<iframe.*?>",               # iframe injection
-    r"(?i)<img\s+src=.*?onerror=",    # XSS via img onerror
+    r"(?i)--",                         
+    r"(?i)#",                          
+    r"(?i)<iframe.*?>",               
+    r"(?i)<img\s+src=.*?onerror=",    
     r"(?i)document\.cookie",
-    r"(?i)<meta\s+http-equiv",        # Meta tag injection
+    r"(?i)<meta\s+http-equiv",        
 ]
 
 def detect_attack(payload: Union[str, dict]) -> list:

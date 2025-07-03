@@ -1,6 +1,6 @@
 import unittest
 import json
-from app import app, socketio  # Ensure app.py exposes both app and socketio
+from app import app, socketio
 from flask_socketio import SocketIOTestClient
 
 class RealTimeAttackDetectionTest(unittest.TestCase):
