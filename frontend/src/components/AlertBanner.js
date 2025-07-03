@@ -1,11 +1,14 @@
 import React from 'react';
-import { Alert } from '@mui/material';
+import { Alert, Collapse } from '@mui/material';
 
-export default function AlertBanner({ message }) {
-  if (!message) return null;
+const AlertBanner = ({ log, open }) => {
   return (
-    <Alert severity="error" sx={{ my: 2 }}>
-      🚨 Attack Detected: {message}
-    </Alert>
+    <Collapse in={open}>
+      <Alert severity="error">
+        🚨 Attack detected from IP: <strong>{log?.ip}</strong> — Payload contains suspicious pattern(s)!
+      </Alert>
+    </Collapse>
   );
-}
+};
+
+export default AlertBanner;
