@@ -1,26 +1,26 @@
 # 🚨 Real-Time Web App Attack Detection System
 
-A real-time security monitoring system that detects and logs suspicious payloads submitted to a web application. The project features a **Flask-based backend** and a **React + Material UI frontend**, with **WebSocket-based real-time alerts** for detected attacks.
+A real-time security monitoring system that detects and logs suspicious payloads submitted to a web application. The project features a Flask-based backend and a React + Material UI frontend, with WebSocket-based real-time alerts for detected attacks.
 
 ## 📦 Features
 
-* 🔍 Detects common web attacks (XSS, SQL Injection, Directory Traversal, etc.)
-* ⚡ Real-time attack alerts using **WebSockets (Socket.IO)**
-* 📊 Attack log table with **IP address**, **payload**, and **timestamp**
-* 🚨 Visual **alert banner** for new attack detection
-* 🌐 RESTful API for **submitting and retrieving logs**
-* 🐳 **Dockerized backend** for easy deployment
+* Detects common web attacks (XSS, SQL Injection, Directory Traversal, etc.)
+* Real-time attack alerts using WebSockets (Socket.IO)
+* Attack log table with IP address, payload, and timestamp
+* Visual alert banner for new attack detection
+* RESTful API for submitting and retrieving logs
+* Dockerized backend for easy deployment
 
 ## 🛠️ Technologies Used
 
-###  Backend
+### Backend
 
 * Python + Flask
 * Flask-SocketIO
 * Regex-based attack detection engine
 * Docker
 
-### 🔼 Frontend
+### Frontend
 
 * React
 * Material UI
@@ -140,21 +140,21 @@ REACT_APP_API_URL=http://localhost:5000
 ```
 
 ## 🔮 Future Scope
-* 💾 Persistent storage with a database
+* Persistent storage with a database
 
-* 📊 Charts and statistics (e.g. attack frequency)
+* Charts and statistics (e.g. attack frequency)
 
-* 🔐 Authentication and role-based access control
+* Authentication and role-based access control
 
-* 🌍 IP geolocation of attackers
+* IP geolocation of attackers
 
-* 📧 Email or Slack alerts
+* Email or Slack alerts
 
-* ☁️ Kubernetes deployment with full observability
+* Kubernetes deployment with full observability
 
-* 🔁 Log export options (CSV, JSON)
+* Log export options (CSV, JSON)
 
-* 🧠 ML-based anomaly detection engine
+* ML-based anomaly detection engine
 
 ## 📄 License
 Apache License 2.0. See `LICENSE` file for details.
