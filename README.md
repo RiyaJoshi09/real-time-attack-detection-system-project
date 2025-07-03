@@ -59,7 +59,7 @@ real-time-attack-detection-system/
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/RiyaJoshi09/real-time-attack-detection-system.git
